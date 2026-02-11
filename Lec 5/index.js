@@ -11,9 +11,9 @@ for (let index = 0; index < arr.length; index++) {
     
 }
 
-map 
-reduce 
-filter 
+// map 
+// reduce 
+// filter 
 
 arr.push("Sahil")
 arr.push(false)
