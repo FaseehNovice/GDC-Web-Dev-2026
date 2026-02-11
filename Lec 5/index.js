@@ -13,7 +13,7 @@ for (let index = 0; index < arr.length; index++) {
 
 // map 
 // reduce 
-// filter 
+// filter fit 
 
 arr.push("Sahil")
 arr.push(false)
