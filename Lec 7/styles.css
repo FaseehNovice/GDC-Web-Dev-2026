@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+div{
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+.box1{
+    background-color: plum;
+    color: crimson;
+    
+}
+.box2{
+    background-color: rebeccapurple;
+    color: paleturquoise;
+    height: 100px;
+    width: 200px;
+    overflow: auto;
+}
