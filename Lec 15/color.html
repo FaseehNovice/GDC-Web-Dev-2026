@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(11, 11, 11);
+        }
+
+        button{
+            background-color: crimson;
+            padding: 15px 30px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+        }
+        button:hover{
+            box-shadow: 0 0 10px crimson;
+        }
+
+        button:active{
+            transform: scaleZ(1);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <button id="btn">Off</button>
+    </div>
+
+    <script>
+        let btn = document.getElementById("btn")
+
+        btn.addEventListener("click",(()=>{
+           if(btn.innerText==="Off"){
+               document.body.style.background="white"
+               btn.style.color="black"
+               btn.innerText="On"
+           }else if(btn.innerText=="On"){
+             document.body.style.background="rgb(11,11,11)"
+               btn.style.color="white"
+                 btn.innerText="Off"
+           }
+        }))
+    </script>
+</body>
+</html>

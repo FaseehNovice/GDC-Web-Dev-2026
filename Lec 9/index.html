@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+    <!-- <h1 id="head"><p>
+        I am child
+    </p></h1>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, tenetur.</p>
+    <span class="para"></span> -->
+    <h1 id="newchild">Hello </h1>
+
+      <div id="parent"> 
+        <h1 id="child1">Hello</h1>
+        <p id="child2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, eveniet?</p>
+      </div>
+    <script>
+    //    let heading = document.getElementById("head")
+    //    let para = document.getElementsByClassName("para")
+    //    let another = document.querySelector(".para")
+    //  let another = document.querySelectorAll("#head")
+
+        //    let heading = document.getElementById("head")
+        //     // heading.innerText = "New word"
+            // heading.innerHTML  = "Hello inner Html"
+
+            // innerText tag >> inner text update 
+            // innerHtml  tag >> html tags insert krta ha 
+              
+            // let parent = document.getElementById("parent")
+            //  let child1= document.getElementById("child1")
+            //   let child2 = document.getElementById("child2")
+
+            //      let newchild = document.getElementById("newchild")
+
+            //   let delchild = parent.removeChild(child2)
+                 
+
+            let child = document.createElement("p")
+            child.innerText= " I am appended"
+            child.style.color="blue"
+            child.style.fontSize="50px"
+          let addedelem = document.body.appendChild(child)
+       
+    </script>
+</body>
+</html>

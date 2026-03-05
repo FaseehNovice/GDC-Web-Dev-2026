@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #add{
+            background-color: crimson;
+            padding: 10px 30px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello world</h1>
+     <input placeholder="Enter first value" type="text" name="" id="inp1">
+      <input placeholder="Enter sec value" type="text" name="" id="inp2">
+      <button id="add">+</button>
+       <button id="sub">-</button>
+    <script>
+       let add = document.getElementById("add")
+       let sub = document.getElementById("sub")
+         let inp1 = document.getElementById("inp1")
+         let inp2 = document.getElementById("inp2")
+
+         add.addEventListener("click",(()=>{
+             let value1 = parseInt(inp1.value)
+              let value2 = parseInt(inp2.value)
+              alert(value1+value2)
+         }))
+
+         function color(){
+            add.style.background = "yellow"
+         }
+          
+         
+         add.addEventListener("mouseover",color)
+         add.addEventListener("mouseleave",(()=>{
+            add.style.background = "crimson"
+         }))
+
+        //  add.removeEventListener("mouseover",color)
+
+         sub.addEventListener("click",(()=>{
+             let value1 = parseInt(inp1.value)
+              let value2 = parseInt(inp2.value)
+              alert(value1-value2)
+         }))
+
+
+
+    //    btn.addEventListener(eventname, callbackfunc)
+    // function greet(){
+    //     alert("hello world")
+    // }
+
+    // btn.addEventListener("click",greet)
+
+    // btn.addEventListener("click",(()=>{
+    //     alert("Hello world")
+    // }))
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+// setTimeout
+// setInterval
+
+// setTimeout(callfun,time)
+
+
+
+// console.log("I am upper");
+
+
+// setTimeout((()=>{
+//     console.log("I am inside");
+// }),3000)
+
+// console.log("I am lower");
+// console.log("I am lower");
+// console.log("I am lower");
+
+// setInterval((()=>{
+//     console.log("I am inside");
+// }),3000)
+
+// blocking  synchronus
+
+// asynchronus non blocking 
+
+// setTimeout(() => {
+//     console.log("I am executed in 3 sec");
+    
+// }, 3000);
+
+// setTimeout(() => {
+//     console.log("I am executed in 2 sec");
+    
+// }, 2000);
+// setTimeout(() => {
+//     console.log("I am executed in 4 sec");
+    
+// }, 4000);
+// setTimeout(() => {
+//     console.log("I am executed in 3 again sec");
+    
+// }, 3000);
+
+// 4 sec 
+
+
+const promise = new Promise(((resolve,reject)=>{
+            resolve(10)
+}))
+
+// promise.then(()=>{
+//  console.log("Promised full full");
+ 
+// }).catch(()=>{
+//  console.log("Promised reject");
+// })
+
+// promise chaining 
+
+// promise.then((value)=>{
+//         console.log("Promise full fill" + value);
+        
+// }).catch((err)=>{
+//   console.log("Promise reject" + err);
+
+// })
+
+// promise.then(()=>{
+//     console.log("Promise full full");
+//     return new Promise((resolve,reject)=>{
+//         console.log("I am in promise 2");
+//     }).then(()=>{
+//           console.log("Promise 2 full full");
+//           return new Promise((resolve,reject)=>{
+//             console.log("I am in promise 3");
+//           }).then(()=>{
+//             return new Promise((resolve,reject)=>{
+//                  console.log("Promise 3 full full");
+//             }).then(()=>{
+
+//             })
+//           })
+//     })
+// })
+
+// call back hell 
+
+
+// Promise 1 full full >> Promise 2 >> Promise 3 >>> Promisee 4 
+
+// async await    

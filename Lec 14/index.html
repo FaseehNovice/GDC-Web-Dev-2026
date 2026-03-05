@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">Hello world</h1>
+    <input  type="text" placeholder="Enter first value" name="" id="inp1">
+      <input type="text" placeholder="Enter second value" name="" id="inp2">
+    <button id="add">+</button>
+     <button id="sub">-</button>
+    <script>
+      // alert 
+      // prompt //
+      // confirm 
+      
+        let add = document.getElementById("add")
+         let sub = document.getElementById("sub")
+          let inp1 = document.getElementById("inp1")
+           let inp2 = document.getElementById("inp2")
+            let head = document.getElementById("head")
+            //    let value1 = parseInt(inp1.value)
+            //     let value2 = parseInt(inp2.value)
+            //     console.log(value1);
+                
+            add.addEventListener("click",(()=>{
+                 let value1 = parseInt(inp1.value)
+                let value2 = parseInt(inp2.value)
+                
+                 alert(value1 + value2)
+            }))
+              sub.addEventListener("click",(()=>{
+                 let value1 = parseInt(inp1.value)
+                let value2 = parseInt(inp2.value)
+                 alert(value1 - value2)
+            }))
+
+
+
+           
+            
+          
+
+    //   alert("Hello world")
+
+    //   let a = 10; 
+    //   console.log(a);
+
+    //   alert("Valuee of a is " + a)
+      
+  
+
+        //    alert("End")
+         
+        // let question = prompt("Enter your name")
+        // console.log(`Your name is ${question}`);
+        
+        // let value = 10 ;
+        // console.log(value);
+
+        //      let age = prompt("Enter your age")
+        // console.log(`Your name is ${age}`);
+
+        // let num1 = parseInt(prompt("Enter first num"))
+        // parseInt(num1)
+        //  let num2 = parseInt(prompt("Enter sec num")) 
+        //  console.log(num1+num2);
+
+         // "2" + "3"
+
+        //   let num1 = prompt("Enter first num")
+        //   num1 = parseInt(num1)
+       
+        //  let num2 = prompt("Enter sec num")
+
+        //    num2 = parseInt(num2)
+        //  console.log(num1+num2);
+
+        // let conf = confirm("Are you sure you want to exit")
+        // if(conf){
+        //     alert("User select ok")
+        // }
+        // if(!conf){
+        //      alert("User select cancel")
+        // }
+
+        // function greet(){
+        //     alert("I am button")
+        // }
+        // btn.addEventListener("click",greet)
+
+        // btn.addEventListener("click",(()=>{
+        //     alert("I am btn")
+        // }))
+        // "click",
+        // "mouseIn",
+        // "mouseout", 
+        // "onSubmit",
+        // "onChange"
+
+
+    </script>
+</body>
+</html>
